@@ -57,10 +57,11 @@ setInterval(() => {
 
     const link = document.createElement('a');
     const replacement = document.createElement('img');
-    const randIntX = Math.floor(200 + Math.random() * 200);
-    const randIntY = Math.floor(100 + Math.random() * 200);
+    const randIntX = Math.floor(300 + Math.random() * 20);
+    const randIntY = Math.floor(200 + Math.random() * 10);
     replacement.src = `http://placekitten.com/${randIntX}/${randIntY}`;
-    replacement.setAttribute("id", "cat");
+    link.setAttribute("id", "cat");
+    replacement.setAttribute("alt", "test");
     link.setAttribute("href", "https://www.doordash.com/?filterQuery-cuisine=healthy");
     elementOfInterest.parentElement.appendChild(link);
     //<img id="motivation" width=60% src=${postUrl}>
